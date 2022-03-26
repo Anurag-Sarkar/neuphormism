@@ -1,0 +1,273 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    padding: 25px;
+    height: 100%;
+    width: 100%;
+    background-color:#d2deeb;
+}
+#top i{
+    font-size: 20px;
+    color: rgb(153, 153, 153);
+}
+#top h4{
+    padding-bottom: 5px;
+    font-size: 20px;
+    padding-top: 15px;
+    font-weight: 600;
+    color: rgb(117, 117, 117);
+}
+#top h3{
+    font-size: 30px;
+    color: rgb(0, 0, 66);
+}
+#boxes{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+#main-box{
+    position: relative;
+    width: 100%;
+}
+
+#one,#two,#three,#four,#five{
+    -webkit-appearance: none;
+    box-shadow:  -5px -5px 15px rgba(237, 248, 253, 0.7),  5px 5px 15px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#one:checked,#two:checked,#three:checked,#four:checked,#five:checked{
+    -webkit-appearance: none;
+    box-shadow: inset -5px -5px 15px rgba(237, 248, 253, 0.5), inset 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 70px;
+    height: 70px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    border-right: 2px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05); 
+} 
+#temp{
+    box-shadow:  -35px -20px 50px rgba(237, 248, 253, 0.6),  35px 15px 40px rgba(0, 0, 0, 0.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-50%);
+    top: 45%;
+    left: 50%;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+
+}
+#temp::after{
+    content: "";
+    box-shadow: inset -10px -10px 15px rgba(237, 248, 253, 0.6), inset 5px 5px 15px rgba(0, 0, 0, 0.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    position: absolute;
+
+}
+#tempcen{
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    box-shadow: -8px -8px 10px rgba(237, 248, 253, 0.6), 5px 5px 5px rgba(0, 0, 0, 0.12);
+    border-radius: 50%;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+}
+#tempcen h1{   
+    font-weight: 400; 
+    padding: 0px 15px 15px 0px;
+    color: rgb(0, 0, 66);
+    font-size: 70px;
+    letter-spacing: -3px;
+}
+#tempcen h2{
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    justify-content: center;
+    color: rgb(117, 117, 117);
+}
+#tempcen h1 sup {
+    position: absolute;
+    top: 15%;
+    padding-left: 4px;
+    font-weight: 300;
+    font-size:20px;
+}
+#tempcen h1 sup span{
+    position: absolute;
+    right: 14%;
+    padding-right: 2px;
+    font-weight: 300;
+    font-size:25px;
+}
+#tempcen h2 i{
+    padding-right: 10px;
+}
+#bottom{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    bottom: 0%;
+    left: 50%;
+}
+#humid{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#internet{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#humid-icon{
+    box-shadow:  -5px -5px 10px rgba(237, 248, 253, 0.6),  5px 5px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+#inter-icon{
+    box-shadow:  -5px -5px 10px rgba(237, 248, 253, 0.6),  5px 5px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    margin-left: -10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+#humid,#internet{
+    box-shadow:  -5px -5px 10px rgba(237, 248, 253, 0.6),  5px 5px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    padding-left: 25px;
+    justify-content: start;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    border-right: 2px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    
+}
+#humid{
+    margin-left: -2px;
+    margin-bottom: 20px;
+}
+#inter h2,#humid h2{
+    font-weight: 400;
+}
+#inter h3,#humid h3{
+    color: rgb(117, 117, 117);
+    font-weight: 400;
+}
+#humid-icon i,#inter-icon i{
+    color: rgb(117, 117, 117);
+    font-size: 25px;
+}
+#footer{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    bottom: -1% ;
+    left: 50%;
+}
+#left h2,#right h2{
+    font-weight: 300;
+    font-size: 18px;
+    color: rgb(117, 117, 117);
+}
+#left h1{
+    font-size: 27px;
+    font-weight: 400;
+}
+#left h1 span{
+    font-size: 27px;
+    font-weight: 400;
+    color: rgb(117, 117, 117);
+}
+#slider{
+    position: relative;
+    border-radius: 20px;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    border-right: 2px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    margin: 10px 0px 0px 45px;
+    width: 50px;
+    height: 25px;
+    box-shadow: inset -5px -5px 10px rgba(237, 248, 253, 0.6), inset 5px 5px 10px rgba(0, 0, 0, 0.12);
+}
+#toogle{
+    -webkit-appearance: none;
+    box-shadow:  -5px -5px 10px rgba(237, 248, 253, 0.6),  5px 5px 10px rgba(0, 0, 0, 0.12);
+    position: absolute;
+    left: 0%;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    /* border: 2px solid #ccdae9; */
+    background-color: rgb(134, 226, 165);
+    transition: 0.3s;
+}
+#toogle:checked{
+    -webkit-appearance: none;
+    box-shadow:  -5px -5px 10px rgba(237, 248, 253, 0.6),  5px 5px 10px rgba(0, 0, 0, 0.12);
+    position: absolute;
+    left: 60%;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    /* border: 2px solid #ccdae9; */
+    background-color: rgb(238, 159, 159);
+    transition: 0.3s;
+}
+#one:after{
+    content: '\Home';
+}
+#two:after{
+    content: 'Devices';
+}
+#three:after{
+    content: 'Rooms';
+}
+#four:after{
+    content: 'A/C';
+}
+#five:after{
+    content: '+';;
+}
